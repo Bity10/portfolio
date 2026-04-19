@@ -6,11 +6,34 @@
     <title>Hi</title>
     <style>
     body {background-color: #101010}
-    p {color: #CCCCCC}
+    p {color: #CCCCCC; font-size: 3vw; text-align: centre; margin:auto}
+
+    .KeyPiece {background-color: #303030; text-align: centre; 
+    border: 2px solid; border-radius: 7px;
+    margin:auto; cursor: pointer;
+    width:33%; length:66%}
+
+    .KeyImage {border: 3px solid; border-radius: 7px; 
+    display: block; margin-left:auto; margin-right:auto; margin-top: 4px; margin-bottom: 8px;
+    width:94%; length:94%}
+
     </style>
 </head>
 <body>
 <p> bbq munsie alert! </p>
-<img src="images/MCBicon.png">
+
+<div class = "KeyPiece" onclick="MCBClicked()">
+<img src="images/MCBicon.png" class="KeyImage">
+<p> MPH is a cool civ mod </p>
+</div>
+
+
+<script>
+function MCBClicked() {
+    document.body.style.backgroundColor = "#ffffff";
+}
+</script>
+
 </body>
 </html>
+
